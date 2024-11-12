@@ -17,7 +17,7 @@ public class CustomerController {
     public CustomerController() throws ClassNotFoundException, SQLException {
        customerModel= new CustomerModel();
     }
-
+//search customer
     public CustomerDto searchCustomer(String custId) throws SQLException{
         CustomerDto customerDto = customerModel.getCustomer(custId);
         return customerDto;
