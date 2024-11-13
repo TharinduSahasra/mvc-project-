@@ -17,15 +17,18 @@ public class ItemController {
     public ItemController() throws Exception{
         this.itemModel = new ItemModel();
     }
-
+//save items
     public String saveItem(Itemdto itemDto) throws Exception{
         String resp = itemModel.saveItem(itemDto);
         return resp;
     }
+    //get Items
+
   public ArrayList<Itemdto> getAllItem() throws Exception{
         ArrayList<Itemdto> itemDtos = itemModel.getAllItem();
         return itemDtos;
     }
+//seacrh Items
 
    public Itemdto searchItem(String itemId) throws Exception{
         Itemdto itemDto = itemModel.getItem(itemId);

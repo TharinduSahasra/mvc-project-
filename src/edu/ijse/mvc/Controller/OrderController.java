@@ -22,6 +22,7 @@ public class OrderController {
         orderModel = new OrderModel();
     }
 
+    //palce order
     public String placeOrder(OrderDto orderDto, ArrayList<OrderDetailDto> orderDetailDtos) throws Exception{
         
          return orderModel.placeOrder(orderDto, orderDetailDtos);
